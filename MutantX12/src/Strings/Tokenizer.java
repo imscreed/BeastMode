@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.StringTokenizer;
 
 /**
- * Created by Firedog on 2017-01-31.
+ * Created by Ibrahim on 2017-01-31.
  */
 public class Tokenizer {
     public static void main(String[] args){
