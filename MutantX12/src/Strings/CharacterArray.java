@@ -11,6 +11,7 @@ public class CharacterArray {
         String A=sc.next();
         String B=sc.next();
             System.out.println(A.length() + B.length());
+            //Check if A occurs before B. This happens when the value is negative.
             if(A.compareTo(B)<=0){
             System.out.println("No");
         }else {
