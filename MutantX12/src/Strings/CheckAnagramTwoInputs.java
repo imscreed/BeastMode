@@ -26,7 +26,7 @@ public class CheckAnagramTwoInputs {
             Arrays.sort(a);
             char[] b = in2.toCharArray();
             Arrays.sort(b);
-            //Very useful for chceking the equality of two arrays
+            //Very useful for checking the equality of two arrays
             result =  Arrays.equals(a, b);
         }
         return result;
