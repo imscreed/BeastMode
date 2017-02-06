@@ -16,13 +16,29 @@ public class SumOfNegativeSubArrays {
             a[i] = in.nextInt();
         }
         in.close();
-        List<Integer> subarr = new ArrayList<Integer>();
+        List<Integer> all_sum = new ArrayList<Integer>();
+        int count = 0;
         for(int i=0;i<n;i++){
-            subarr.add(a[i]);
-            for(int j=0;j<n;j++){
-                subarr.add(a[i+1]+a[j]);
+            int sum = 0;
+            for(int j=0;j<n;j++) {
+                System.out.println("");
+                sum = 0;
+                for(int k=i;k<=j;k++) {
+                    System.out.print(a[k] + " ");
+                    sum += a[k];
+                }
+                if(sum!=0) {
+                    System.out.print(" " + sum + " ");
+                    all_sum.add(sum);
+                }
+                if(sum<0){
+                    count++;
+                }
+
             }
 
         }
+        System.out.println("\nList containing sum of all sub arrays: "+all_sum);
+        System.out.println("Number of negative sub arrays sums:" + count);
     }
 }
